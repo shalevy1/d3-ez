@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>dataTransform.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="barChartCircular.html">barChartCircular</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="barChartCircular.html#.width">width</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="barChartClustered.html">barChartClustered</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="barChartClustered.html#.width">width</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="barChartHorizontal.html">barChartHorizontal</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="barChartHorizontal.html#.width">width</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="barChartStacked.html">barChartStacked</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="barChartStacked.html#.width">width</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="barChartVertical.html">barChartVertical</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="barChartVertical.html#.width">width</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="barsCircular.html">barsCircular</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="barsCircular.html#.width">width</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="barsHorizontal.html">barsHorizontal</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="barsHorizontal.html#.width">width</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="barsStacked.html">barsStacked</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="barsStacked.html#.width">width</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="barsVertical.html">barsVertical</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="barsVertical.html#.width">width</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="base.html">base</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="base.html#.width">width</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="bubbleChart.html">bubbleChart</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="bubbleChart.html#.width">width</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="bubbles.html">bubbles</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="bubbles.html#.width">width</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="candlestickChart.html">candlestickChart</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="candlestickChart.html#.width">width</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="candleSticks.html">candleSticks</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="candleSticks.html#.width">width</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="circularAxis.html">circularAxis</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="circularAxis.html#.height">height</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="circularRingLabels.html">circularRingLabels</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="circularRingLabels.html#.height">height</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="circularSectorLabels.html">circularSectorLabels</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="circularSectorLabels.html#.height">height</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="creditTag.html">creditTag</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="creditTag.html#.href">href</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="creditTag.html#.text">text</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="donut.html">donut</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="donut.html#.width">width</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="donutChart.html">donutChart</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="donutChart.html#.width">width</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="donutLabels.html">donutLabels</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="donutLabels.html#.width">width</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="ganttChart.html">ganttChart</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ganttChart.html#.width">width</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="heatMapRadial.html">heatMapRadial</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="heatMapRadial.html#.width">width</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="heatMapRing.html">heatMapRing</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="heatMapRing.html#.width">width</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="heatMapRow.html">heatMapRow</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="heatMapRow.html#.width">width</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="heatMapTable.html">heatMapTable</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="heatMapTable.html#.width">width</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="htmlList.html">htmlList</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="htmlList.html#.classed">classed</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="htmlList.html#.on">on</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="htmlTable.html">htmlTable</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="labeledNode.html">labeledNode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="labeledNode.html#.color">color</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="legend.html">legend</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="legend.html#.width">width</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="legendColor.html">legendColor</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="legendColor.html#.width">width</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="legendSize.html">legendSize</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="legendSize.html#.width">width</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="legendThreshold.html">legendThreshold</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="legendThreshold.html#.width">width</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="lineChart.html">lineChart</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lineChart.html#.width">width</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lineChart.html#.width">width</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="numberCard.html">numberCard</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="numberCard.html#.width">width</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="polarArea.html">polarArea</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="polarArea.html#.width">width</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="polarAreaChart.html">polarAreaChart</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="polarAreaChart.html#.width">width</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="proportionalAreaCircles.html">proportionalAreaCircles</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="proportionalAreaCircles.html#.width">width</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="punchCard.html">punchCard</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="punchCard.html#.width">width</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="radarArea.html">radarArea</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="radarArea.html#.width">width</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="radarChart.html">radarChart</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="radarChart.html#.width">width</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="roseChart.html">roseChart</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="roseChart.html#.width">width</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="roseChartSector.html">roseChartSector</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="roseChartSector.html#.width">width</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="scatterPlot.html">scatterPlot</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="scatterPlot.html#.width">width</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="title.html">title</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="title.html#.width">width</a></span></li><li class="nav-heading">Modules</li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-base.html">base</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-chart_barChartCircular.html">chart/barChartCircular</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-chart_barChartClustered.html">chart/barChartClustered</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-chart_barChartHorizontal.html">chart/barChartHorizontal</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-chart_barChartStacked.html">chart/barChartStacked</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-chart_barChartVertical.html">chart/barChartVertical</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-chart_bubbleChart.html">chart/bubbleChart</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-chart_candlestickChart.html">chart/candlestickChart</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-chart_donutChart.html">chart/donutChart</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-chart_ganttChart.html">chart/ganttChart</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-chart_heatMapRadial.html">chart/heatMapRadial</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-chart_heatMapTable.html">chart/heatMapTable</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-chart_lineChart.html">chart/lineChart</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-chart_polarAreaChart.html">chart/polarAreaChart</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-chart_punchCard.html">chart/punchCard</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-chart_radarChart.html">chart/radarChart</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-chart_roseChart.html">chart/roseChart</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-component_barsCircular.html">component/barsCircular</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-component_barsHorizontal.html">component/barsHorizontal</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-component_barsStacked.html">component/barsStacked</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-component_barsVertical.html">component/barsVertical</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-component_bubbles.html">component/bubbles</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-component_candleSticks.html">component/candleSticks</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-component_circularAxis.html">component/circularAxis</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-component_circularRingLabels.html">component/circularRingLabels</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-component_circularSectorLabels.html">component/circularSectorLabels</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-component_creditTag.html">component/creditTag</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-component_donut.html">component/donut</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-component_donutLabels.html">component/donutLabels</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-component_heatMapRing.html">component/heatMapRing</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-component_heatMapRow.html">component/heatMapRow</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-component_htmlList.html">component/htmlList</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-component_htmlTable.html">component/htmlTable</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-component_htmlTable.html#~my">my</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-component_labeledNode.html">component/labeledNode</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-component_legend.html">component/legend</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-component_legend.html#~scaleType">scaleType</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-component_legendColor.html">component/legendColor</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-component_legendSize.html">component/legendSize</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-component_legendThreshold.html">component/legendThreshold</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-component_lineChart.html">component/lineChart</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-component_numberCard.html">component/numberCard</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-component_polarArea.html">component/polarArea</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-component_proportionalAreaCircles.html">component/proportionalAreaCircles</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-component_radarArea.html">component/radarArea</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-component_roseChartSector.html">component/roseChartSector</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-component_scatterPlot.html">component/scatterPlot</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-component_title.html">component/title</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-dataTransform.html">dataTransform</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-palette.html">palette</a></span></li>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">dataTransform.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import * as d3 from "d3";
+
+/**
+ * Data Analysis
+ *
+ * @module
+ * @returns {Array}
+ */
+export default function dataTransform(data) {
+
+	const SINGLE_SERIES = 1;
+	const MULTI_SERIES = 2;
+
+	/**
+	 * Row or Rows?
+	 *
+	 * @type {Number}
+	 */
+	const dataStructure = data.key !== undefined ? SINGLE_SERIES : MULTI_SERIES;
+
+	/**
+	 * Row Key
+	 *
+	 * @returns {Array}
+	 */
+	const rowKey = function() {
+		if (dataStructure === SINGLE_SERIES) {
+			return d3.values(data)[0];
+		}
+	}();
+
+	/**
+	 * Row Keys
+	 *
+	 * @returns {Array}
+	 */
+	const rowKeys = function() {
+		if (dataStructure === MULTI_SERIES) {
+			return data.map((d) => d.key);
+		}
+	}();
+
+	/**
+	 * Row Totals
+	 *
+	 * @returns {Array}
+	 */
+	const rowTotals = function() {
+		if (MULTI_SERIES === dataStructure) {
+			const ret = {};
+			d3.map(data).values().forEach((d) => {
+				const rowKey = d.key;
+				d.values.forEach((d) => {
+					ret[rowKey] = (typeof ret[rowKey] === "undefined") ? 0 : ret[rowKey];
+					ret[rowKey] += d.value;
+				});
+			});
+			return ret;
+		}
+	}();
+
+	/**
+	 * Row Totals Max
+	 *
+	 * @returns {number}
+	 */
+	const rowTotalsMax = function() {
+		if (dataStructure === MULTI_SERIES) {
+			return d3.max(d3.values(rowTotals));
+		}
+	}();
+
+	/**
+	 * Join two arrays
+	 *
+	 * @private
+	 * @param {Array} array1 - First Array.
+	 * @param {Array} array2 - First Array.
+	 * @returns {Array}
+	 */
+	const union = function(array1, array2) {
+		const ret = [];
+		const arr = array1.concat(array2);
+		let len = arr.length;
+		const assoc = {};
+
+		while (len--) {
+			const item = arr[len];
+
+			if (!assoc[item]) {
+				ret.unshift(item);
+				assoc[item] = true;
+			}
+		}
+
+		return ret;
+	};
+
+	/**
+	 * Column Keys
+	 *
+	 * @returns {Array}
+	 */
+	const columnKeys = function() {
+		if (dataStructure === SINGLE_SERIES) {
+			return d3.values(data.values).map((d) => d.key);
+		}
+
+		let ret = [];
+		d3.map(data).values().forEach((d) => {
+			const tmp = [];
+			d.values.forEach((d, i) => {
+				tmp[i] = d.key;
+			});
+			ret = union(tmp, ret);
+		});
+
+		return ret;
+	}();
+
+	/**
+	 * Row Totals
+	 *
+	 * @returns {Array}
+	 */
+	const rowTotal = function() {
+		if (dataStructure === SINGLE_SERIES) {
+			return d3.sum(data.values, (d) => d.value);
+		}
+	}();
+
+	/**
+	 * Column Totals
+	 *
+	 * @returns {Array}
+	 */
+	const columnTotals = function() {
+		if (dataStructure !== MULTI_SERIES) {
+			return;
+		}
+
+		let ret = {};
+		d3.map(data).values().forEach((d) => {
+			d.values.forEach((d) => {
+				const columnName = d.key;
+				ret[columnName] = (typeof(ret[columnName]) === "undefined" ? 0 : ret[columnName]);
+				ret[columnName] += d.value;
+			});
+		});
+
+		return ret;
+	}();
+
+	/**
+	 * Column Totals Max
+	 *
+	 * @returns {Array}
+	 */
+	const columnTotalsMax = function() {
+		if (dataStructure === MULTI_SERIES) {
+			return d3.max(d3.values(columnTotals));
+		}
+	}();
+
+	/**
+	 * Min Value
+	 *
+	 * @returns {number}
+	 */
+	const minValue = function() {
+		if (dataStructure === SINGLE_SERIES) {
+			return d3.min(data.values, (d) => +d.value);
+		}
+
+		let ret;
+		d3.map(data).values().forEach((d) => {
+			d.values.forEach((d) => {
+				ret = (typeof(ret) === "undefined" ? d.value : d3.min([ret, +d.value]));
+			});
+		});
+
+		return +ret;
+	}();
+
+	/**
+	 * Max Value
+	 *
+	 * @returns {number}
+	 */
+	const maxValue = function() {
+		if (dataStructure === SINGLE_SERIES) {
+			return d3.max(data.values, (d) => +d.value);
+		}
+
+		let ret;
+		d3.map(data).values().forEach((d) => {
+			d.values.forEach((d) => {
+				ret = (typeof(ret) === "undefined" ? d.value : d3.max([ret, +d.value]));
+			});
+		});
+
+		return +ret;
+	}();
+
+	/**
+	 * Max Coordinates
+	 *
+	 * @returns {Array}
+	 */
+	const maxCoordinates = function() {
+		let maxX, maxY, maxZ;
+
+		if (dataStructure === SINGLE_SERIES) {
+			maxX = d3.max(data.values, (d) => +d.x);
+			maxY = d3.max(data.values, (d) => +d.y);
+			maxZ = d3.max(data.values, (d) => +d.z);
+		} else {
+			d3.map(data).values().forEach((d) => {
+				d.values.forEach((d) => {
+					maxX = (typeof(maxX) === "undefined" ? d.x : d3.max([maxX, +d.x]));
+					maxY = (typeof(maxY) === "undefined" ? d.y : d3.max([maxY, +d.y]));
+					maxZ = (typeof(maxZ) === "undefined" ? d.z : d3.max([maxZ, +d.z]));
+				});
+			});
+		}
+
+		return { x: maxX, y: maxY, z: maxZ };
+	}();
+
+	/**
+	 * How many decimal places?
+	 *
+	 * @private
+	 * @param {number} num - Float.
+	 * @returns {number}
+	 */
+	const decimalPlaces = function(num) {
+		const match = ("" + num).match(/(?:\.(\d+))?(?:[eE]([+-]?\d+))?$/);
+		if (!match) {
+			return 0;
+		}
+
+		return Math.max(
+			0,
+			// Number of digits right of decimal point.
+			(match[1] ? match[1].length : 0)
+			// Adjust for scientific notation.
+			-
+			(match[2] ? +match[2] : 0)
+		);
+	};
+
+	/**
+	 * Max decimal place
+	 *
+	 * @returns {number}
+	 */
+	const maxDecimalPlace = function() {
+		let ret = 0;
+		if (dataStructure === MULTI_SERIES) {
+			d3.map(data).values().forEach((d) => {
+				d.values.forEach((d) => {
+					ret = d3.max([ret, decimalPlaces(d.value)])
+				});
+			});
+		}
+
+		// toFixed must be between 0 and 20
+		return ret > 20 ? 20 : ret;
+	}();
+
+
+	/**
+	 * Attempt to auto-calculate some thresholds
+	 *
+	 * @returns {Array}
+	 */
+	const thresholds = function() {
+		const distance = maxValue - minValue;
+
+		return [
+			+(minValue + (0.15 * distance)).toFixed(maxDecimalPlace),
+			+(minValue + (0.40 * distance)).toFixed(maxDecimalPlace),
+			+(minValue + (0.55 * distance)).toFixed(maxDecimalPlace),
+			+(minValue + (0.90 * distance)).toFixed(maxDecimalPlace)
+		];
+	}();
+
+	/**
+	 * Rotate Data
+	 *
+	 * @returns {Array}
+	 */
+	const rotate = function() {
+		const columnKeys = data.map((d) => d.key);
+		const rowKeys = data[0].values.map((d) => d.key);
+
+		const rotated = rowKeys.map((rowKey, rowIndex) => {
+			const values = columnKeys.map((columnKey, columnIndex) => {
+				// Copy the values from the original object
+				const values = Object.assign({}, data[columnIndex].values[rowIndex]);
+				// Swap the key over
+				values.key = columnKey;
+
+				return values;
+			});
+
+			return {
+				key: rowKey,
+				values: values
+			};
+		});
+
+		return rotated;
+	};
+
+	/**
+	 * Summary
+	 *
+	 * @returns {Array}
+	 */
+	const summary = function() {
+		return {
+			dataStructure: dataStructure,
+			rowKey: rowKey,
+			rowTotal: rowTotal,
+			rowKeys: rowKeys,
+			rowTotals: rowTotals,
+			rowTotalsMax: rowTotalsMax,
+			columnKeys: columnKeys,
+			columnTotals: columnTotals,
+			columnTotalsMax: columnTotalsMax,
+			minValue: minValue,
+			maxValue: maxValue,
+			maxCoordinates: maxCoordinates,
+			maxDecimalPlace: maxDecimalPlace,
+			thresholds: thresholds
+		}
+	};
+
+	return {
+		summary: summary,
+		rotate: rotate
+	};
+
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Fri Nov 30 2018 23:23:24 GMT+0000 (GMT) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
